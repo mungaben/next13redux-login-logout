@@ -11,11 +11,13 @@ import authReducer from "./authSlice";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 
 
-export const store=configureStore({
-    reducer:{
-authReducer
+export const store = configureStore({
+    reducer: {
+        authReducer
     }
 })
+
+
 
 
 // craete type for Rootstate
@@ -28,5 +30,5 @@ export type AppDispatch = typeof store.dispatch;
 
 // create a useselector type
 
-export const AppUseSelector:TypedUseSelectorHook<RootState> = useSelector
+export const AppUseSelector: TypedUseSelectorHook<RootState> = useSelector
 
